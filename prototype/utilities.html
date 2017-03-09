@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-8">
+    <h1>Utilities and Misc Dialogs</h1>
+    <hr>
+      {% for image in site.static_files %} {% if image.path contains 'images/prototype/utilities' %}
+      <figure id="{{ image.path | replace: "/assets/images/prototype/utilities/", "" | replace: ".png", "" | slugify }}" data-label="{{ image.path | replace: "/assets/images/prototype/utilities/", "" | replace: ".png", "" | slugify }}">
+          <figcaption>{{ image.path | replace: "/assets/images/prototype/utilities/", "" | replace: ".png", "" }}</figcaption>
+          <a href="{{ site.baseurl }}{{ image.path }}" target="_blank"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="max-width:100%" /></a>
+      </figure>
+      {% endif %} {% endfor %}
+  </div>
+  <div class="sidebar col-md-4">
+      {% include _sidebar-nav.html %}
+  </div>
+</div>

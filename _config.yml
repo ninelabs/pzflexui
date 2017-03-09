@@ -1,0 +1,21 @@
+# Site settings
+title: PZ Flex Application UI
+email: team@ninelabs.com
+description: > # this means to ignore newlines until "baseurl:"
+  An inventory of UI screens and elements created for the new PZFlex application.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: ninelabs
+github_username:  ninelabs
+
+# Build settings
+highlighter: true
+markdown: kramdown
+permalink: pretty
+
+#page_gen-dirs: true # uncomment, if you prefer to generate named folders
+#page_gen:
+#  - data: 'prototypes'
+#    template: 'prototype'
+#    name: 'full_name'
+#    dir: 'prototypes'

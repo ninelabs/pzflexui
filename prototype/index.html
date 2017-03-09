@@ -1,0 +1,22 @@
+---
+layout: default
+pid: prototypes
+---
+
+<div class="row">
+  <div class="col-md-8">
+      <a href="ide" class="btn btn-primary">IDE</a>
+      <a href="sma" class="btn btn-primary">Solid Modeling Approach</a>
+      <a href="processing" class="btn btn-primary">Post Processing</a>
+      <a href="model" class="btn btn-primary">Model Setup</a>
+      <a href="utilities" class="btn btn-primary">Utilities</a>
+  </div>
+  <div class="sidebar col-md-4">
+      <ul>
+          {% for image in site.static_files %} {% if image.path contains 'images/prototype' %}
+          <li><a href="{{ site.baseurl }}{{ image.path }}" alt="image" />{{ image.path | replace: "/assets/images/prototype/", "" | replace: ".png", "" }}</a>
+          </li>
+          {% endif %} {% endfor %}
+      </ul>
+  </div>
+</div>
