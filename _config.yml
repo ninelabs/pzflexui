@@ -9,7 +9,7 @@ twitter_username: ninelabs
 github_username:  ninelabs
 
 # Build settings
-highlighter: true
+highlighter: rouge
 markdown: kramdown
 permalink: pretty
 
