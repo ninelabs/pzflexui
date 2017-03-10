@@ -8,7 +8,7 @@ layout: default
     <hr>
       {% for image in site.static_files %} {% if image.path contains 'images/prototype/utilities' %}
       <figure id="{{ image.path | replace: "/assets/images/prototype/utilities/", "" | replace: ".png", "" | slugify }}" data-label="{{ image.path | replace: "/assets/images/prototype/utilities/", "" | replace: ".png", "" | slugify }}">
-          <figcaption>{{ image.path | replace: "/assets/images/prototype/utilities/", "" | replace: ".png", "" }}</figcaption>
+          <figcaption>{{ image.path | replace: "/assets/images/prototype/utilities/", "" | replace: ".png", "" }} <a href="{{ site.baseurl }}{{ image.path }}" target="_blank"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></figcaption>
           <a href="{{ site.baseurl }}{{ image.path }}" target="_blank"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="max-width:100%" /></a>
       </figure>
       {% endif %} {% endfor %}

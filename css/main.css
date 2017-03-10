@@ -12,7 +12,9 @@ figcaption {
   font-weight: bold;
   margin-bottom:1em;
 }
-
+figcaption > a {
+  font-size: .75em;
+}
 
 footer {
   border-top: 1px solid #e4166c;
